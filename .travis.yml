@@ -4,14 +4,9 @@ python:
   - "3.4"
   - "3.5"
   - "3.6"
-matrix:
-  include:
-    - python: 3.3
-      dist: trusty
-      sudo: true
-    - python: 3.7
-      dist: xenial
-      sudo: true
+  - "3.7"
+  - "3.8"
+  - "3.9"
 # command to install dependencies
 install: "python setup.py install"
 # command to run tests
