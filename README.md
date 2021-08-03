@@ -1,4 +1,4 @@
-[![Spavro Build](https://travis-ci.org/pluralsight/spavro.svg?branch=master)](https://travis-ci.org/pluralsight/spavro)
+[![Spavro Build](https://travis-ci.org/mikepk/spavro.svg?branch=master)](https://travis-ci.com/mikepk/spavro)
 
 # (Sp)eedier Avro - Spavro
 
