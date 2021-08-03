@@ -1,4 +1,4 @@
-[![Spavro Build](https://travis-ci.org/mikepk/spavro.svg?branch=master)](https://travis-ci.com/mikepk/spavro)
+[![Spavro Build](https://api.travis-ci.com/mikepk/spavro.svg?branch=master)](https://travis-ci.com/github/mikepk/spavro)
 
 # (Sp)eedier Avro - Spavro
 
