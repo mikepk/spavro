@@ -4,7 +4,7 @@
 
 Spavro is a fork of the [official Apache AVRO python 2 implementation](https://github.com/apache/avro) with the goal of greatly improving data read deserialization and write serialization performance.
 
-Spavro is also python 2/3 compatible (instead of a spearate project / implementation). [Currently tested](https://travis-ci.com/github/mikepk/spavro) using python 2.7, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9 and 3.10. Python versions before 3.3 are not supported due to the use of unicode literals and other compatibility features.
+Spavro is also python 2/3 compatible (instead of a spearate project / implementation). [Currently tested](https://travis-ci.com/github/mikepk/spavro) using python 2.7, 3.4, 3.5, 3.6, 3.7, 3.8, and 3.9. Python 3 versions before 3.4 are not supported due to the use of unicode literals and other compatibility features.
 
 ## Implementation Details
 
