@@ -4,7 +4,7 @@
 
 Spavro is a fork of the [official Apache AVRO python 2 implementation](https://github.com/apache/avro) with the goal of greatly improving data read deserialization and write serialization performance.
 
-Spavro is also python 2/3 compatible (instead of a spearate project / implementation). [Currently tested](https://travis-ci.org/pluralsight/spavro) using python 2.7, 3.3, 3.4, 3.5 and 3.6. Python versions before 3.3 are not supported due to the use of unicode literals and other compatibility features.
+Spavro is also python 2/3 compatible (instead of a spearate project / implementation). [Currently tested](https://travis-ci.com/github/mikepk/spavro) using python 2.7, 3.4, 3.5, 3.6, 3.7, 3.8, and 3.9. Python 3 versions before 3.4 are not supported due to the use of unicode literals and other compatibility features.
 
 ## Implementation Details
 
@@ -26,24 +26,24 @@ The TLDR is that spavro has *14-23x* the throughput of the default Apache avro i
 
 Records per second read:
 
-![Read, 1 field, records per sec](https://github.com/pluralsight/spavro/raw/master/benchmark/results/read_1field_rec_per_sec.png?raw=true "Read, 1 field, records per sec")
-![Read, 500 fields, records per sec](https://github.com/pluralsight/spavro/raw/master/benchmark/results/read_500field_rec_per_sec.png?raw=true "Read, 500 fields, records per sec")
+![Read, 1 field, records per sec](benchmark/results/read_1field_rec_per_sec.png?raw=true "Read, 1 field, records per sec")
+![Read, 500 fields, records per sec](benchmark/results/read_500field_rec_per_sec.png?raw=true "Read, 500 fields, records per sec")
 
 Datums per second (individual fields) read:
 
-![Read, fields per second](https://github.com/pluralsight/spavro/raw/master/benchmark/results/read_datum_per_sec.png?raw=true "Read, fields per second")
+![Read, fields per second](benchmark/results/read_datum_per_sec.png?raw=true "Read, fields per second")
 
 ### Serialize avro records (write)
 
 
 Records per second write:
 
-![Write, 1 field, records per sec](https://github.com/pluralsight/spavro/raw/master/benchmark/results/write_1field_rec_per_sec.png?raw=true "Write, 1 field, records per sec")
-![Write, 500 fields, records per sec](https://github.com/pluralsight/spavro/raw/master/benchmark/results/write_500field_rec_per_sec.png?raw=true "Write, 500 fields, records per sec")
+![Write, 1 field, records per sec](benchmark/results/write_1field_rec_per_sec.png?raw=true "Write, 1 field, records per sec")
+![Write, 500 fields, records per sec](benchmark/results/write_500field_rec_per_sec.png?raw=true "Write, 500 fields, records per sec")
 
 Datums per second (individual fields) write:
 
-![Write, fields per second](https://github.com/pluralsight/spavro/raw/master/benchmark/results/write_datum_per_sec.png?raw=true "Write, fields per second")
+![Write, fields per second](benchmark/results/write_datum_per_sec.png?raw=true "Write, fields per second")
 
 
 ### Methodology
