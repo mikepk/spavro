@@ -16,6 +16,7 @@ logs/*
 
 environment.py
 environments/*
+.tox
 
 # Unit test artifacts
 .coverage_output.xml
