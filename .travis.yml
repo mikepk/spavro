@@ -1,13 +1,35 @@
 language: python
-python:
-  - "2.7"
-  - "3.4"
-  - "3.5"
-  - "3.6"
-  - "3.7"
-  - "3.8"
-  - "3.9"
-# command to install dependencies
+jobs:
+  include:
+  - dist: trusty
+    python: "3.3"
+
+  - dist: xenial
+    python: "3.4"
+
+  - dist: focal
+    python: "2.7"
+
+  - dist: focal
+    python: "3.5"
+
+  - dist: focal
+    python: "3.6"
+
+  - dist: jammy
+    python: "3.7"
+
+  - dist: jammy
+    python: "3.8"
+
+  - dist: focal
+    python: "3.9"
+
+  - dist: jammy
+    python: "3.10"
+
+  - dist: jammy
+    python: "3.11"
+
 install: "python setup.py install"
-# command to run tests
 script: python -m pytest
