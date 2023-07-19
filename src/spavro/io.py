@@ -143,7 +143,7 @@ import logging
 log = logging.getLogger(__name__)
 use_fast = False
 try:
-    from spavro.fast_binary import get_reader, get_writer
+    from spavro.fast_binary import get_reader, get_writer, write
     from spavro.fast_binary import FastBinaryEncoder, FastBinaryDecoder
     use_fast = True
 except ImportError:
@@ -817,12 +817,13 @@ class FastDatumWriter(object):
         if parsed_writer_schema:
             # to_json is a terrible method name for something
             # that returns a python dict! :/
-            self.write_datum = get_writer(parsed_writer_schema.to_json())
+            self.schema = parsed_writer_schema.to_json()
+            self.write_datum = get_writer(self.schema)
 
     def write(self, datum, encoder):
         # validate datum
         try:
-            self.write_datum(encoder.writer, datum)
+            write(encoder.writer, datum, self.write_datum, self.schema)
         except TypeError as ex:
             log.error(self.write_datum)
             log.exception("type error")
