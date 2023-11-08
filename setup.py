@@ -45,11 +45,11 @@ setup(
   long_description_content_type='text/markdown',
   long_description=readme_data,
   author='Michael Kowalchik',
-  author_email='mikepk@pluralsight.com',
+  author_email='mikepk@tenzerolab.com',
   description='An Avro library, Spavro is a (sp)eedier avro implementation using Cython -- Spavro is a fork of the official Apache AVRO python 2 implementation with the goal of greatly improving data read deserialization and write serialization performance.',
   license='Apache License 2.0',
   keywords='avro serialization rpc data',
-  url='http://github.com/pluralsight/spavro',
+  url='http://github.com/mikepk/spavro',
   extras_require={
     'snappy': ['python-snappy'],
     'test': ['pytest>=3.1.1'],
