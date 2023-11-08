@@ -1,6 +1,11 @@
 Spavro Changelog
 -----------------
 
+1.1.24 - Nov 7, 2023
+====================
+
+- Update fast_binary c with newer Cython
+
 1.1.23 - Feb 21, 2020
 =====================
 
