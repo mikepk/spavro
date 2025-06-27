@@ -11,6 +11,12 @@ INT_MAX_VALUE = (1 << 31) - 1
 LONG_MIN_VALUE = -(1 << 63)
 LONG_MAX_VALUE = (1 << 63) - 1
 
+# python3 no longer has a long type so we alias it to int if python3
+try:
+    type(long)
+except NameError:
+    long = int
+
 
 cdef long long read_long(fo):
     '''Read a long using zig-zag binary encoding'''
